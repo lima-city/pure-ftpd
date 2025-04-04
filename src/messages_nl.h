@@ -149,7 +149,7 @@
 #define MSG_RENAME_RNFR_SUCCESS "RNFR geaccepteerd - bestand bestaat reeds, gereed voor bestemming"
 #define MSG_FILE_DOESNT_EXIST "Het spijt me, maar dat bestand bestaat niet"
 #define MSG_RENAME_ALREADY_THERE "RENAME mislukt - doelbestand  bestaat reeds"
-#define MSG_RENAME_NORNFR "RNFR is nodig, vóór RNTO"
+#define MSG_RENAME_NORNFR "RNFR is nodig, vï¿½ï¿½r RNTO"
 #define MSG_RENAME_FAILURE "Herbenoemings/verplaatsings fout"
 #define MSG_RENAME_SUCCESS "Bestand is met succes hernoemd of verplaatst"
 #define MSG_NO_SUPERSERVER "Pure-ftpd binnen een super-server (zoals tcpserver) laten draaien"
@@ -188,7 +188,7 @@
 #define MSG_AUTH_FAILED_LOG "Autorisatie faalde voor gebruiker [%s]"
 #define MSG_ILLEGAL_UMASK "Ongeldige umask"
 #define MSG_STANDALONE_FAILED "Niet mogelijk om een standalone server te starten"
-#define MSG_NO_ANONYMOUS_LOGIN "Dit is een privé systeem - Geen anonieme login mogelijk"
+#define MSG_NO_ANONYMOUS_LOGIN "Dit is een privï¿½ systeem - Geen anonieme login mogelijk"
 #define MSG_ANONYMOUS_ANY_PASSWORD "Elk willekeurig wachtwoord is goed"
 #define MSG_MAX_USERS_IP "Teveel verbindingen (%lu) vanaf dit IP"
 #define MSG_ACTIVE_DISABLED "Active mode is uitgeschakeld"
@@ -218,6 +218,8 @@
 #define MSG_TLS_INFO "TLS: Enabled %s with %s, %d secret bits cipher"
 #define MSG_TLS_WEAK "TLS: Cipher too weak"
 #define MSG_TLS_NEEDED "Sorry, cleartext sessions are not accepted on this server.\n" \
+    "Please reconnect using TLS security mechanisms."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
     "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."

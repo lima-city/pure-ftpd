@@ -208,6 +208,14 @@ Example:
 MySQLGetBandwidthUL SELECT ULBandwidth FROM users WHERE User="\L"
 MySQLGetBandwidthDL SELECT DLBandwidth FROM users WHERE User="\L"
 
+- MySQLGetTLSRequired is an optional setting to require TLS connections for
+specific users. A value of 1, 'y', or 't' means TLS is required for the user.
+A value of 0, 'n', or 'f' means TLS is optional. This feature requires Pure-FTPd
+to be compiled with TLS support.
+
+Example:
+MySQLGetTLSRequired SELECT TLSRequired FROM users WHERE User="\L"
+
 - MySQLForceTildeExpansion is yet another optional feature, to enable "~"
 expansion in paths. 0 disables it (default), 1 enables it. Only enable this
 if real (system) users and virtual (MySQL) users match. In all other cases,

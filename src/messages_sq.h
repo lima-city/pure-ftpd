@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Shifrim shume i dobet"
 #define MSG_TLS_NEEDED "Na vjen keq, sesion te hapura dhe shifrime te dobeta nuk jane te pranuara ne kete server.\n" \
     "Ju lutem te lidheni perseri duke perdorur metodat e sigurise TLS."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Fusha karaktereve charset e papranueshme"
 #define MSG_TLS_NO_CTX "TLS: Konteksti nuk u gjend. Po dalim."
 #define MSG_PROT_OK "Niveli i mbrojtjes se te dhenave eshte \"%s\""

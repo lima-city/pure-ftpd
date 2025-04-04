@@ -339,6 +339,9 @@ void pw_mysql_check(AuthResult * const result,
     char phbuf[NI_MAXHOST];
 
     result->auth_ok = 0;
+#ifdef WITH_TLS
+    result->tls_required = 0;
+#endif
     if (pw_mysql_validate_name(account) != 0) {
         goto bye;
     }
@@ -563,6 +566,24 @@ void pw_mysql_check(AuthResult * const result,
     }
 #endif
     result->slow_tilde_expansion = !tildexp;
+#ifdef WITH_TLS
+    const char *tls_required;
+    if (sqlreq_gettlsrequired != NULL &&
+        (tls_required = pw_mysql_getquery(id_sql_server, sqlreq_gettlsrequired,
+                                      escaped_account, escaped_ip,
+                                      escaped_port, escaped_peer_ip,
+                                      escaped_decimal_ip)) != NULL) {
+        /* Check the value - 0/1, yes/no, true/false, etc. */
+        if (tls_required[0] == '1' || 
+            tolower((unsigned char) tls_required[0]) == 'y' ||
+            tolower((unsigned char) tls_required[0]) == 't') {
+            result->tls_required = 1;
+        } else {
+            result->tls_required = 0;
+        }
+        free((void *) tls_required);
+    }
+#endif
     result->auth_ok = -result->auth_ok;
     bye:
     if (committed == 0) {
@@ -658,6 +679,9 @@ void pw_mysql_exit(void)
 #ifdef THROTTLING
     ZFREE(sqlreq_getbandwidth_ul);
     ZFREE(sqlreq_getbandwidth_dl);
+#endif
+#ifdef WITH_TLS
+    ZFREE(sqlreq_gettlsrequired);
 #endif
 }
 #else

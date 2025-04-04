@@ -156,7 +156,7 @@
 #define MSG_NO_FTP_ACCOUNT "Nu am gasit contul 'ftp'"
 #define MSG_CONF_ERR "Eroare de configurare"
 #define MSG_NO_VIRTUAL_FILE "Lipseste numele fisierului de utilizatori virtuali"
-#define MSG_ILLEGAL_THROTTLING "Valoare eronatã pentru limita ratei de transfer"
+#define MSG_ILLEGAL_THROTTLING "Valoare eronatï¿½ pentru limita ratei de transfer"
 #define MSG_ILLEGAL_TRUSTED_GID "GID-ul de incredere pentru chroot() nu este corespunzator"
 #define MSG_ILLEGAL_USER_LIMIT "Limita utilizator eronata"
 #define MSG_ILLEGAL_FACILITY "Nume necunoscut de facilitate"
@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Sistem de criptare prea slab"
 #define MSG_TLS_NEEDED "Sesiunile in text clar nu sint acceptate pe acest server.\n" \
     "Reconectati-va utilizind mecanismele de securitate TLS."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""
