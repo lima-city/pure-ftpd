@@ -38,6 +38,9 @@ static char *sqlreq_getratio_dl;
 static char *sqlreq_getbandwidth_ul;
 static char *sqlreq_getbandwidth_dl;
 #endif
+#ifdef WITH_TLS
+static char *sqlreq_gettlsrequired;
+#endif
 static signed char server_down;
 
 static ConfigKeywords mysql_config_keywords[] = {
@@ -67,6 +70,9 @@ static ConfigKeywords mysql_config_keywords[] = {
 #ifdef THROTTLING
     { "MYSQLGetBandwidthUL", &sqlreq_getbandwidth_ul },
     { "MYSQLGetBandwidthDL", &sqlreq_getbandwidth_dl },
+#endif
+#ifdef WITH_TLS
+    { "MYSQLGetTLSRequired", &sqlreq_gettlsrequired },
 #endif
     { NULL, NULL }
 };

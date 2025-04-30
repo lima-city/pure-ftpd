@@ -1943,6 +1943,14 @@ void dopass(char *password)
     }
 #endif
     loggedin = 1;
+#ifdef WITH_TLS
+    /* Check if this user requires TLS and enforce it */
+    if (authresult.tls_required && tls_cnx == NULL) {
+        addreply_noformat(421, MSG_TLS_NEEDED_USER);
+        doreply();
+        _EXIT(EXIT_FAILURE);
+    }
+#endif
     if (getcwd(wd, sizeof wd - (size_t) 1U) == NULL) {
         wd[0] = '/';
         wd[1] = 0;

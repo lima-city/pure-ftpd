@@ -282,6 +282,9 @@ typedef struct AuthResult_ {
 #ifdef PER_USER_LIMITS
     unsigned int per_user_max;
 #endif
+#ifdef WITH_TLS
+    int tls_required;                 /* 0=TLS not required, 1=TLS required */
+#endif
 } AuthResult;
 
 typedef struct PureFileInfo_ {
