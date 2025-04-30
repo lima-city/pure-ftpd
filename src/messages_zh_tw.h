@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: 密碼不足"
 #define MSG_TLS_NEEDED "抱歉，此伺服器不接受明文式連線。\n" \
     "請使用TLS的安全機制重新連線。"
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""

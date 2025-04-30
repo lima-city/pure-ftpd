@@ -218,6 +218,8 @@
 #define MSG_TLS_WEAK "TLS: Verschlüsselung zu schwach"
 #define MSG_TLS_NEEDED "Dieser Server akzeptiert keine unverschlüsselten Verbindungen.\n" \
     "Bitte nutzen Sie eine TLS-Verschlüsselung zur Verbindung."
+#define MSG_TLS_NEEDED_USER "Dieser User benötigt eine sichere TLS Verbindung.\n" \
+    "Bitte nutzen Sie eine TLS-Verschlüsselung zur Verbindung."
 #define MSG_ILLEGAL_CHARSET "Ungültiger Zeichensatz"
 #define MSG_TLS_NO_CTX "TLS: Verschlüsselungskontext nicht gefunden. Tschüss."
 #define MSG_PROT_OK "Datensicherungslevel ist \"%s\""

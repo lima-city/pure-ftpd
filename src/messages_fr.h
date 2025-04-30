@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Chiffrement trop faible"
 #define MSG_TLS_NEEDED "Desole, les sessions en clair ne sont pas acceptees sur ce serveur.\n" \
     "Veuillez vous reconnecter en utilisant les mechanismes de securite TLS."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Jeu de caracteres illegal"
 #define MSG_TLS_NO_CTX "TLS: context non trouve. Deconnexion."
 #define MSG_PROT_OK "Niveau de protection regle a \"%s\""

@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Sifra je prilis slaba"
 #define MSG_TLS_NEEDED "Prepacte, ale nesifrovane spojenia nie su povolene na tomto serveri.\n" \
     "Pri najblizsom spojeni pouzite zabezpecovacie mechanizmy TLS."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""

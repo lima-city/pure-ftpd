@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Krypteringsnøkkelen er for svak"
 #define MSG_TLS_NEEDED "Beklager, klartekst-forbindelser er ikke tillatt på denne serveren.\n" \
     "Vær vennlig å koble til på nytt ved bruk av TLS-sikkerhetsmekanismer."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""

@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: C'est quoi ce chiffrement de tafiole ?"
 #define MSG_TLS_NEEDED "Ecoute-moi connard : t'as 10 secondes pour configurer\n" \
     "ton client de merde en TLS. En attendant, degage."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Ton jeu de caractere il puxore grave."
 #define MSG_TLS_NO_CTX "TLS: contexte introuvable. Cassos."
 #define MSG_PROT_OK "Niveau de super mega protection : \"%s\""

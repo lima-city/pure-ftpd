@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Ключ ненадежен"
 #define MSG_TLS_NEEDED "Извините, незащищенные подключения запрещены на сервере.\n" \
      "Подключитесь еще раз, используя шифрование TLS."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""

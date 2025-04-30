@@ -219,6 +219,8 @@
 #define MSG_TLS_WEAK "TLS: Titkosítás túl gyenge"
 #define MSG_TLS_NEEDED "Hiba, cleartext belépési forma nem engedélyezett.\n" \
     "Kérem kapcsolódjon újra TLS biztonsági módot használva."
+#define MSG_TLS_NEEDED_USER "This user requires a secure TLS connection.\n" \
+    "Please reconnect using TLS security mechanisms."
 #define MSG_ILLEGAL_CHARSET "Illegal charset"
 #define MSG_TLS_NO_CTX "TLS: Context not found. Exiting."
 #define MSG_PROT_OK "Data protection level set to \"%s\""
